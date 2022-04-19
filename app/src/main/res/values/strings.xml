@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EYE</string>
+    <string name="stop">播放</string>
+    <string name="play">暂停</string>
+    <string name="fileError">播放</string>
+    <string name="playError">0</string>
+    <string name="temperature">%1$d</string>
+    <string name="pressure">%3$s</string>
+    <string name="frequency">%3$s</string>
+    <string name="time">%1$d</string>
+
+
+</resources>
