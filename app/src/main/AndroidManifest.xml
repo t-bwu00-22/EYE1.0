@@ -1,72 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.eye">
+    package="com.example.eye20">
 
-
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
-        tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+            tools:ignore="ProtectedPermissions" />
+        <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:requestLegacyExternalStorage="true">
 
-    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+            <activity android:name=".MainActivity"
+                android:exported="true">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+            <activity android:name=".Activity_02"
+                android:launchMode="singleTop"
+                android:theme="@style/MyTranslucentTheme"/>
+            //android:screenOrientation="landscape"         横屏
 
-    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
-
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:requestLegacyExternalStorage="true">
-
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Activity_02"
-            android:launchMode="singleTop"
-            android:theme="@style/MyTranslucentTheme"/>
-        //android:screenOrientation="landscape"         横屏
-
-        //android:theme="@style/myTransparent"
+            //android:theme="@style/myTransparent"
             //android:theme="@android:style/Theme.Translucent"
-        <activity android:name=".Activity_03"
-            android:launchMode="singleTop"
-            android:theme="@style/MyTranslucentTheme"/>
-        <activity android:name=".Activity_04"/>
-        <activity android:name=".Activity_05"/>
-        <activity android:name=".Activity_06"/>
-        <activity android:name=".Activity_07"/>
-        <activity android:name="bluetooth.BlueToothActivity"/>
-        <activity android:name="music.Music"/>
-        <activity android:name="music.MusicStart"/>
-        <activity android:name="music.PhoneNumber"/>
+            <activity android:name=".Activity_03"
+                android:launchMode="singleTop"
+                android:theme="@style/MyTranslucentTheme"/>
+            <activity android:name=".Activity_04"/>
+            <activity android:name=".Activity_05"/>
+            <activity android:name=".Activity_06"/>
+            <activity android:name=".Activity_07"/>
+            <activity android:name="bluetooth.BlueToothActivity"/>
+            <activity android:name="bluetooth.BlueTooth"/>
+            <activity android:name="serialno_1.Serial"
+                tools:ignore="Instantiatable" />
+            <activity android:name="serialno_1.DeviceldUtil"
+                tools:ignore="Instantiatable,MissingClass" />
+            <activity android:name=".DisPlay" />
+            <activity android:name=".DataFile"
+                tools:ignore="Instantiatable" />
+        </application>
+        <uses-permission android:name="android.permission.BLUETOOTH"/>
+        <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+            tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+        <uses-permission android:name="android.permission.READ_CONTACTS"/>
+        <uses-permission android:name="android.permission.ReadPhoneState"/>
 
-<activity android:name="music.LocalAudioListActivity"
-    tools:ignore="Instantiatable" />
-    </application>
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.ReadPhoneState"/>
-
-    <!--增加请求安装权限-->
-    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-    <!--从sdcard读取数据的权限-->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <!--往sdcard中写入数据的权限 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!--在sdcard中创建/删除文件的权限 -->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
-        tools:ignore="ProtectedPermissions" />
+        <!--增加请求安装权限-->
+        <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+        <!--从sdcard读取数据的权限-->
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <!--往sdcard中写入数据的权限 -->
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <!--在sdcard中创建/删除文件的权限 -->
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+            tools:ignore="ProtectedPermissions" />
+        <!--使用网络的权限 -->
+        <uses-permission android:name=" android .permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
 
-</manifest>
+    </manifest>

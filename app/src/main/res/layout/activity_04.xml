@@ -1,34 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
+    android:id="@+id/horizontal"
+    android:scrollbars="none">
     >
-
-    <!--
-
-
-    <TextView
-        android:id="@+id/text0"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="#66ccff"
-        android:gravity="center"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:text="音乐"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008"
-        tools:ignore="MissingConstraints" />
--->
 
     <FrameLayout
         android:id="@android:id/tabcontent"
@@ -84,10 +64,10 @@
 
                 <TextView
                     android:id="@+id/textView1_curr_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
                     android:layout_marginRight="5dp"
-                    android:text="00:00" />
+                    android:textSize="10dp"/>
 
                 <SeekBar
                     android:id="@+id/playSeekBar"
@@ -97,10 +77,10 @@
 
                 <TextView
                     android:id="@+id/textView1_total_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
                     android:layout_marginLeft="5dp"
-                    android:text="00:00" />
+                    android:textSize="10dp" />
 
             </LinearLayout>
 
@@ -167,55 +147,6 @@
 
             </ListView>
 
-            <!--
-                <RadioGroup
-                    android:id="@+id/main_tab_group"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-
-                    <RadioButton
-                        android:id="@+id/radioButton0"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:button="@null"
-                        android:checked="true"
-                        android:padding="10dp"
-                        android:text="播放界面"
-                        android:textSize="30dp" />
-
-
-                    <RadioButton
-                        android:id="@+id/radioButton1"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:button="@null"
-                        android:checked="true"
-                        android:padding="10dp"
-                        android:text="歌单列表"
-                        android:textSize="30dp" />
-
-                </RadioGroup>
-
-            </LinearLayout>
-
-            <FrameLayout
-                android:id="@android:id/tabcontent"
-                android:layout_width="fill_parent"
-                android:layout_height="0.0dip"
-                android:layout_weight="1.0" />
-
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.0"
-                android:visibility="gone" />
--->
-
         </LinearLayout>
 
 
@@ -225,5 +156,5 @@
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</HorizontalScrollView>
 

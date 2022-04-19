@@ -9,14 +9,11 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.Set;
 
-import android.widget.Toast;
-
 public class BlueToothActivity extends Activity {
-
-
     private BluetoothAdapter adapter;
     private BroadcastReceiver receiver = new BroadcastReceiver() {
         @Override
@@ -28,7 +25,7 @@ public class BlueToothActivity extends Activity {
             if (action.equals(BluetoothDevice.ACTION_FOUND)) {
                 String name=   device.getName();
             } else if (action.equals(BluetoothDevice.ACTION_BOND_STATE_CHANGED)) {
-                //可以在监听到蓝牙状态是进行操作
+                //可以在监听到蓝牙状态时进行操作
                 switch (device.getBondState()){
                     case BluetoothDevice.BOND_BONDED:
                         //已经配对成功
@@ -65,7 +62,7 @@ public class BlueToothActivity extends Activity {
         else
             System.out.println("蓝牙未开启");
         //获取蓝牙是否可用
-        Toast.makeText(BlueToothActivity.this, isenable + "<-=-=-=-isenable", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(bluetooth.BlueToothActivity.this, isenable + "<-=-=-=-isenable", Toast.LENGTH_SHORT).show();
         if (!adapter.isEnabled()) {
             //开启蓝牙
             adapter.enable();
@@ -107,5 +104,4 @@ public class BlueToothActivity extends Activity {
         super.onDestroy();
         unregisterReceiver(receiver);
     }
-
 }

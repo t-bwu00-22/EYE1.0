@@ -3,11 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/EYE/app/src/main/res/layout/activity_main.xml" value="0.11005434782608696" />
+        <entry key="..\:/EYE2.0/app/src/main/res/drawable-v24/cricle.xml" value="0.1" />
+        <entry key="..\:/EYE2.0/app/src/main/res/drawable-v24/cricle_02.xml" value="0.1" />
+        <entry key="..\:/EYE2.0/app/src/main/res/drawable-v24/musicselect.xml" value="0.1" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/activity_02.xml" value="0.18" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/activity_03.xml" value="0.11639492753623189" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/activity_04.xml" value="0.11639492753623189" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/activity_05.xml" value="0.11639492753623189" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/activity_06.xml" value="0.11639492753623189" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/activity_07.xml" value="0.11639492753623189" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/activity_local_audio_list.xml" value="0.11639492753623189" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/ble_activity.xml" value="0.1234375" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/bluetooth.xml" value="0.17798913043478262" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/driverecord_activity.xml" value="0.22" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/listview.xml" value="0.1234375" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/local_audio_list_item.xml" value="0.11639492753623189" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/music.xml" value="0.11639492753623189" />
+        <entry key="..\:/EYE2.0/app/src/main/res/layout/text.xml" value="0.11639492753623189" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
